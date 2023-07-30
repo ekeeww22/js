@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="적정체중계산기, 적정체중계산, 체중계산">
+    <meta name="description" content="내 키에 맞는 적정 체중 TEST">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 키에 맞는 적정 체중 TEST</title>
+    <link rel="stylesheet" href="./styles/reset_scale.css">
+    <link rel="stylesheet" href="./styles/style_scale.css">
+    <link rel="shortcut icon" href="./images/bmi.png" type="image/x-icon">
+    <link rel="icon" href="./images/bmi.png" type="image/x-icon">
+</head>
+<body>
+    <div class="scale_wrap">
+        <h1>내 키에 맞는 몸무게 계산해보기</h1>
+        <ul>
+            <li>
+                <input type="text" id="user_height" placeholder="키를 입력해주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '키를 입력해주세요'">
+                <span>cm</span>
+            </li>
+            <li>
+                <input type="text" id="user_weight" placeholder="몸무게를 입력해주세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '몸무게를 입력해주세요'">
+                <span>kg</span>
+            </li>
+        </ul>
+        <div class="btn_wrap">
+            <button type="submit" id="result_btn">계산하기</button>
+            <button type="reset" id="reset_btn">초기화</button>
+        </div>
+        <p class="result"></p>
+    </div>
+    <script src="./script/scale.js"></script>
+</body>
+</html>
