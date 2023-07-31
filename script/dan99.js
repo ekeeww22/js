@@ -7,11 +7,10 @@ let result6 = document.querySelector(".contents:nth-child(7) .result");
 let result7 = document.querySelector(".contents:nth-child(8) .result");
 let result8 = document.querySelector(".contents:nth-child(9) .result");
 let result9 = document.querySelector(".contents:nth-child(10) .result");
+const dan2 = 2
 const resultBtn = document.querySelector('#result_btn');
 const resetBtn = document.querySelector('#reset_btn');
-let dan2 = 2
 console.log(result1, result2, result3, result4, result5, result6, result7, result8, result9, resultBtn, resetBtn);
-
 resultBtn.addEventListener('click',function(){
     result1.innerHTML = dan2*1;
     result2.innerHTML = dan2*2;

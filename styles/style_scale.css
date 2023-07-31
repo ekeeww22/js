@@ -1,9 +1,10 @@
-.scale_wrap * {font-size:2rem; font-weight:600; word-spacing:-8px; letter-spacing:0.02em;}
 body {background: url(../images/bg.jpg) no-repeat fixed center 0; background-size:cover;}
+.scale_wrap * {font-size:2rem; font-weight:600; word-spacing:-8px; letter-spacing:0.02em;}
 .scale_wrap {
     display:flex; flex-flow:column nowrap; justify-content: center; align-items: center;
     padding:320px 0;
 }
+/* 타이틀 */
 .scale_wrap h1 {
     margin-bottom:30px; font-size:3rem;
     background:linear-gradient(-45deg,magenta, rgb(0, 26, 255), yellow, magenta);
@@ -11,6 +12,7 @@ body {background: url(../images/bg.jpg) no-repeat fixed center 0; background-siz
     -webkit-text-fill-color:transparent;
     background-size:200%; animation:bg 5s linear infinite, scale 0.8s linear infinite alternate;
 }
+/* 내용 */
 .scale_wrap ul {}
 .scale_wrap ul li {}
 .scale_wrap ul li input { background:none;
@@ -18,18 +20,18 @@ body {background: url(../images/bg.jpg) no-repeat fixed center 0; background-siz
 .scale_wrap ul li input::placeholder {color:hotpink;}
 .scale_wrap ul li #user_height {color:blueviolet;}
 .scale_wrap ul li #user_weight {color:blueviolet;}
-
 .scale_wrap ul li span {font-size:2.5rem; color:rgb(184, 48, 184)}
-/* 버튼 */
+/* button */
 .scale_wrap .btn_wrap {display:flex; flex-flow:row nowrap; align-items:center; margin-top:30px;}
 .scale_wrap .btn_wrap * {font-size:2.2rem; padding:10px 15px; border-radius:10px; transition:all 0.5s; color:rgb(71, 71, 71)}
 .scale_wrap .btn_wrap #result_btn {margin-right:20px; background:pink;}
 .scale_wrap .btn_wrap #result_btn:hover {background:palevioletred; color:#fff; transform: scale(1.1);}
 .scale_wrap .btn_wrap #reset_btn {background:lightgray;}
 .scale_wrap .btn_wrap #reset_btn:hover {background:lightslategray; color:#fff; transform: scale(1.1);}
+/* 결과 */
 .scale_wrap .result {
     display:none; background:rgba(229, 219, 255, 0.5); margin-top:30px; padding:30px; border:5px dotted rgba(170, 154, 211, 0.3); color:rgb(80, 19, 141);}
-
+/* animation */
 @keyframes scale {
     0% {transform:scale(1);}
     100% {transform:scale(1.1);}

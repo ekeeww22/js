@@ -3,7 +3,6 @@ let userWeight = document.querySelector('#user_weight');
 const resultBtn = document.querySelector('#result_btn');
 const resetBtn = document.querySelector('#reset_btn');
 let result = document.querySelector('.result');
-
 let nomal_w = 0;
 console.log(userHeight, userWeight, resultBtn, resetBtn, result)
 resultBtn.addEventListener('click',function(){

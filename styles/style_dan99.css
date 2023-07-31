@@ -3,8 +3,8 @@
     display: flex; flex-flow: column nowrap; justify-content:center; align-items: center; padding:80px 0;
 }
 .dan_wrap h1 {font-size:4.5rem; margin-bottom:20px; transform: translateX(30px); animation:font_color 3s infinite alternate; }
-
 .dan_wrap h1 img {width:80px; position:relative; top:80px; animation:y 0.8s linear infinite alternate;}
+/* table */
 .dan_wrap .table_wrap {border-radius:20px; border:5px dotted rgba(255, 208, 0, 0.5); background:beige; }
 .dan_wrap .table_wrap table { width:300px; height:600px; }
 .dan_wrap .table_wrap table td {text-align:center; }
@@ -14,12 +14,14 @@
 .dan_wrap .table_wrap table .contents td:first-child { width:120px;}
 .dan_wrap .table_wrap table .contents td:nth-child(2) { width:50px;}
 .dan_wrap .table_wrap table .contents .result { width:100px; }
+/* button */
 .dan_wrap .btn_wrap {margin-top:20px;}
 .dan_wrap .btn_wrap * {padding:10px 15px; border-radius:10px; transition:0.5s;}
 .dan_wrap .btn_wrap #result_btn {margin-right:10px; background:tomato; color:rgb(20, 24, 27);}
 .dan_wrap .btn_wrap #result_btn:hover {transform:scale(1.1); background:dodgerblue; color:#fff;}
 .dan_wrap .btn_wrap #reset_btn {color:rgb(20, 24, 27);}
 .dan_wrap .btn_wrap #reset_btn:hover {transform:scale(1.1); background:dimgray; color:#fff;}
+/* animation */
 @keyframes y {
     0% {transform:translateY(30px);}
     100% {transform:translateY(0);}
