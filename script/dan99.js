@@ -33,3 +33,20 @@ resetBtn.addEventListener('click',function(){
     result8.innerHTML = null;
     result9.innerHTML = null;
 });
+
+const dan2Calc = document.querySelector('#dan2_calc') // 2단고정 input
+const calc = document.querySelector('#calc') // 계산식
+const resultDan2 = document.querySelector('#result_dan2') // 결과 출력 input
+const resultCalcBtn = document.querySelector('#resultbtn')
+const resetCalcBtn = document.querySelector('#resetbtn')
+console.log(dan2Calc, calc, resultDan2);
+resultCalcBtn.addEventListener('click',function(){
+    let first = Number(dan2Calc.value);
+    let last = Number(calc.value);
+    console.log(first, last, first*last);
+    resultDan2.value = first*last
+});
+resetCalcBtn.addEventListener('click',function(){
+    resultDan2.value = null;
+    calc.value = null;
+});

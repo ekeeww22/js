@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="./styles/style_dan99.css">
     <link rel="shortcut icon" href="./images/second.png" type="image/x-icon">
     <link rel="icon" href="./images/second.png" type="image/x-icon">
-    
 </head>
 <body>
     <div class="dan_wrap">
         <h1>구구단을 외자!<img src="./images/pencil.png" alt=""></h1>
+        <div class="dan2_calc_wrap">
+            <input type="text" id="dan2_calc" value="2" readonly><span>x</span>
+            <input type="text" id="calc" placeholder="숫자를 입력해주세요" onfocus="this.placeholder=''", onblur="this.placeholder='숫자를 입력해주세요'"><span>=</span>
+            <input type="text" id="result_dan2" readonly>
+            <div class="btnwrap">
+                <button type="button" id="resultbtn">정답보기</button>
+                <button type="reset" id="resetbtn">초기화</button>
+            </div>
+        </div>
         <div class="table_wrap">
             <table>
                 <tr class="title_wrap">
@@ -72,6 +80,7 @@
             <button type="reset" id="reset_btn">초기화</button>
         </div>
     </div>
+    
     <script src="./script/dan99.js"></script>
 </body>
 </html>

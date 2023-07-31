@@ -3,7 +3,23 @@
     display: flex; flex-flow: column nowrap; justify-content:center; align-items: center; padding:80px 0;
 }
 .dan_wrap h1 {font-size:4.5rem; margin-bottom:20px; transform: translateX(30px); animation:font_color 3s infinite alternate; }
-.dan_wrap h1 img {width:80px; position:relative; top:80px; animation:y 0.8s linear infinite alternate;}
+.dan_wrap h1 img {width:80px; position:relative; top:-50px; right:-30px; animation:y 0.8s linear infinite alternate;}
+/* 계산기 */
+.dan_wrap .dan2_calc_wrap {display:flex; flex-flow:row nowrap; justify-content: center; align-items: center; margin-bottom:30px;}
+.dan_wrap .dan2_calc_wrap input:nth-child(1),
+.dan_wrap .dan2_calc_wrap input:nth-child(5){width:70px;}
+.dan_wrap .dan2_calc_wrap input {text-align: center; background:beige; padding:5px 10px; border-radius: 10px;}
+.dan_wrap .dan2_calc_wrap #dan2_calc {}
+.dan_wrap .dan2_calc_wrap #calc {width:280px;}
+.dan_wrap .dan2_calc_wrap #calc::placeholder {color:brown;}
+.dan_wrap .dan2_calc_wrap #result_dan2 {}
+.dan_wrap .dan2_calc_wrap span {margin:0 10px;}
+.dan_wrap .dan2_calc_wrap .btnwrap {margin-top:20px; position: relative; top:-10px; right:-20px;}
+.dan_wrap .dan2_calc_wrap .btnwrap * {padding:10px 15px; border-radius:10px; transition:0.5s;}
+.dan_wrap .dan2_calc_wrap .btnwrap #resultbtn {margin-right:10px; background:lightgreen; color:rgb(20, 24, 27);}
+.dan_wrap .dan2_calc_wrap .btnwrap #resultbtn:hover {transform:scale(1.1); background:gold; color:#fff;}
+.dan_wrap .dan2_calc_wrap .btnwrap #resetbtn {color:rgb(20, 24, 27);}
+.dan_wrap .dan2_calc_wrap .btnwrap #resetbtn:hover {transform:scale(1.1); background:dimgray; color:#fff;}
 /* table */
 .dan_wrap .table_wrap {border-radius:20px; border:5px dotted rgba(255, 208, 0, 0.5); background:beige; }
 .dan_wrap .table_wrap table { width:300px; height:600px; }

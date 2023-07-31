@@ -4,7 +4,9 @@ let result = document.querySelector('.result');
 let nomal_w = 0;
 const resultBtn = document.querySelector('#result_btn');
 const resetBtn = document.querySelector('#reset_btn');
-console.log(userHeight, userWeight, resultBtn, resetBtn, result)
+const calcResultBtn = document.querySelector('#resultbtn');
+const calcResetBtn = document.querySelector('#resetbtn');
+console.log(userHeight, userWeight, resultBtn, resetBtn, result, calcResultBtn, calcResetBtn)
 resultBtn.addEventListener('click',function(){
     nomal_w = (userHeight.value-100)*0.9;
     console.log(nomal_w);
@@ -17,3 +19,4 @@ resetBtn.addEventListener('click',function(){
     userWeight.value = null;
     result.style.display = 'none';
 });
+
